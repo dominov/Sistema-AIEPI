@@ -1,0 +1,64 @@
+{% load mptt_tags poll_tag i18n %}
+{% if user.is_staff %}
+    {% if fiber_menu_parent_page %}
+
+<ul class="nav navbar-nav navbar-right">
+
+    {% else %}
+
+<ul>
+
+    {% endif %}
+    {% recursetree fiber_menu_pages %}
+    {% if request.user|is_visible:node %}
+        <li class='{% if children %} dropdown {% endif %} {% if node.get_absolute_url == request.path %} active {% endif %}'>
+            <a {% if children %} class="dropdown-toggle" data-toggle="dropdown" {% endif %}  href="{{ node.get_absolute_url }}" >
+                {% if node.li_title %}
+                {{ node.li_title }}
+                   {% if node.li_title == 'username' %}
+                      {{ request.user.username }}
+                   {% elif node.li_title == 'full_name' %}
+                      {{ request.user.get_full_name }}
+                   {% endif %}
+                {% else %}
+                    {{ node.title }}
+                {% endif %}
+                {% if children %} <b class="caret"></b> {% endif %}
+            </a>
+            {% if children %}
+                <ul class="dropdown-menu" >
+                    {{ children }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endif %}
+    {% endrecursetree %}
+</ul>
+{% else %}
+<ul class="nav navbar-nav navbar-right">
+    {% recursetree fiber_menu_pages %}
+    {% if request.user|is_visible:node %}
+        <li class='{% if children %} dropdown {% endif %} {% if node.get_absolute_url == request.path %} active {% endif %}'>
+            <a  {% if children %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="{{ node.get_absolute_url }}">
+                {% if node.li_title %}
+                   {% if node.li_title == 'username' %}
+                      {{ request.user.username }}
+                   {% elif node.li_title == 'full_name' %}
+                      {{ request.user.get_full_name }}
+                   {% endif %}
+                {% else %}
+                    {{ node.title }}
+                {% endif %}
+                {% if children %} <b class="caret"></b> {% endif %}
+            </a>
+            {% if children %}
+                <ul class="dropdown-menu">
+                    {{ children }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endif %}
+    {% endrecursetree %}
+</ul>
+
+{% endif %}

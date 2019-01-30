@@ -1,0 +1,8 @@
+{% load staticfiles i18n modern_tags %}
+<script>
+    var LANGUAGE_CODE = '{{ LANGUAGE_CODE }}';
+</script>
+{% if original.pk %}
+    <div id="column-chart-respondent-admin" class='tab-content-main'  data-url="{% url 'poll:practice_score_column_chart' %}" data-username="{{ original.user.username }}"></div>
+    <div id="line-chart-respondent-admin" class='tab-content-main' data-url="{% url 'poll:question_line_chart' %}"  data-username="{{ original.user.username }}"></div>
+{% endif %}

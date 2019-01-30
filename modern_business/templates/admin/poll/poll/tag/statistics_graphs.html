@@ -1,0 +1,13 @@
+{% load staticfiles i18n modern_tags %}
+<script>
+    var LANGUAGE_CODE = '{{ LANGUAGE_CODE }}';
+</script>
+{% if original.pk %}
+    <div class="col-md-12">
+        <div id="column-chart-poll" data-url="{% url 'poll:poll_date_bar_chart' %}" data-poll="{{ original.pk }}"></div>
+        <div id="line-chart-poll" data-url="{% url 'poll:poll_date_line_chart' %}" data-poll="{{ original.pk }}"></div>
+    </div>
+    <button data-poll="{{ original.id }}" data-url="{% url 'poll:update_polldate_score' %}" id='update_score' href="{{ request.get_full_path }}#statistics_graphs" class="button btn-primary pull-right">
+        {% trans 'Update practice and question score' %}
+    </button>
+{% endif %}

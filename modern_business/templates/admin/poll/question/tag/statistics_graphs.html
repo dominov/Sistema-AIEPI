@@ -1,0 +1,5 @@
+{% load staticfiles i18n modern_tags %}
+{% if original.pk %}
+<div id="column-chart-question-admin" class='tab-content-main' data-url="{% url 'poll:question_bar_chart' %}" data-question="{{ original.pk }}"></div>
+<div id="line-chart-question-admin" class='tab-content-main' ></div>
+{% endif %}

@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-20 16:30-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/404.html:37
+msgid "Page Not Found"
+msgstr "Pagina no encontrada"
+
+#: templates/404.html:40 templates/404.html.py:57 templates/base.html:51
+#: templates/highcharts/graphic.html:4
+#: templates/pages/password_change_done.html:12
+#: templates/registration/password_change.html:9
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/404.html:54
+msgid ""
+"The page you're looking for could not be found. Here are some helpful links "
+"to get you back on track:"
+msgstr ""
+"La pagina que estas buscando no pudo ser encontrada. Aqui hay algunas link "
+"que te  pueden ser utilies para encontrar lo que buscas:"
+
+#: templates/404.html:60
+msgid "Admin"
+msgstr "Adminstrador"
+
+#: templates/404.html:74
+msgid "Copyright &copy; Your Website 2014"
+msgstr "Derechos reservados &copy; SI-IMCI"
+
+#: templates/admin/poll/poll/tag/statistics_graphs.html:8
+msgid "Update practice and question score"
+msgstr "Actulizar puntaje de practicas y preguntas"
+
+#: templates/base.html:45
+msgid "Untitle"
+msgstr "Untitulado"
+
+#: templates/base.html:46
+msgid "untitle"
+msgstr "untitulado"
+
+#: templates/base.html:66
+msgid "Copyright &copy; "
+msgstr "Derechos reservados &copy; "
+
+#: templates/highcharts/graphic.html:5 templates/highcharts/graphic.html:8
+msgid "Graphics"
+msgstr "Graficos"
+
+#: templates/highcharts/graphic.html:16
+msgid "Practice"
+msgstr "Practica"
+
+#: templates/highcharts/graphic.html:39
+msgid "Questions"
+msgstr "Preguntas"
+
+#: templates/include/menu.html:28
+msgid "Questionnaire"
+msgstr "Cuestionario"
+
+#: templates/include/menu.html:31
+msgid "Graphic"
+msgstr "Grafico"
+
+#: templates/include/menu.html:39 templates/registration/password_change.html:5
+#: templates/registration/password_change.html:10
+#: templates/registration/password_change.html:18
+msgid "Change password"
+msgstr "Cambiar Contraseña"
+
+#: templates/include/menu.html:42
+msgid "Logout"
+msgstr "Cerrar sesion"
+
+#: templates/include/menu.html:48 templates/pages/login.html:4
+#: templates/pages/login.html.py:8
+msgid "Login"
+msgstr "Iniciar session"
+
+#: templates/pages/login.html:16 templates/pages/login.html.py:70
+msgid "Sign In"
+msgstr "Registrarse"
+
+#: templates/pages/login.html:49
+msgid "Start"
+msgstr "Inciar"
+
+#: templates/pages/login.html:68
+msgid "Sign Up"
+msgstr "Regístrate"
+
+#: templates/pages/login.html:80
+msgid "Email"
+msgstr "Correo electronico"
+
+#: templates/pages/login.html:83
+msgid "Email Address"
+msgstr "Dirrecion de correo electronico"
+
+#: templates/pages/login.html:87 templates/pages/login.html.py:90
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#: templates/pages/login.html:94 templates/pages/login.html.py:97
+msgid "Last Name"
+msgstr "Apellido"
+
+#: templates/pages/login.html:101 templates/pages/login.html.py:103
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/pages/login.html:107
+msgid "Invitation Code"
+msgstr "Codigo de invitacion"
+
+#: templates/pages/login.html:117
+msgid "&nbsp Sign Up"
+msgstr "&nbsp Registrarse"
+
+#: templates/pages/login.html:119
+msgid "or"
+msgstr "o"
+
+#: templates/pages/login.html:125
+msgid "Sign Up with Facebook"
+msgstr "Registrarse con Facebook"
+
+#: templates/pages/password_change_done.html:9
+#: templates/pages/password_change_done.html:14
+msgid "Password change"
+msgstr "Cambiar Contraseña"
+
+#: templates/pages/password_change_done.html:23
+msgid "Your password was changed."
+msgstr "Tu Contraseña fue cambiada"
+
+#: templates/pages/questionnaire.html:5
+msgid "questionnaire: "
+msgstr "Cuestionario: "
+
+#: templates/pages/questionnaire.html:62
+msgid "SEND"
+msgstr "ENVIAR"
+
+#: templates/registration/password_change.html:45
+msgid "Save"
+msgstr "Guardar"
+
+#~ msgid "graphics"
+#~ msgstr "Graficos"

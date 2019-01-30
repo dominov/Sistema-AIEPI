@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load modern_tags  i18n %}
+
+{% block page_header %}
+    {% trans 'questionnaire: ' %}{{ polldate }}
+{% endblock %}
+
+{% block main %}
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="table-container">
+                    <form method="post" action="{% url 'poll:questionnaire' poll.id %}">
+                        {{ formset.management_form }}
+                        {% csrf_token %}
+                        <table class="table table-filter container-formset">
+                            {% for form in formset %}
+                                <tr>
+                                    <td class="status-answer">
+                                        <div class="ckbox star">
+                                            {% if form.instance.resolved %}
+                                                <i class="glyphicon glyphicon-ok-sign"></i>
+                                            {% else %}
+                                                <i class="glyphicon glyphicon-edit"></i>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                    <div class="media">
+                                        {% if form.instance.question.type == 'options' %}
+                                            <div class="col-md-8 summary">
+                                                <label for="{{ form.option.id_for_label }}">{{ form.instance.question }}</label>
+                                                {% for error in form.options.errors %}
+                                                    <ul class="errorlist text-danger">
+                                                        <li>{{ error }}</li>
+                                                    </ul>
+                                                {% endfor %}
+                                            </div>
+                                            <div class="col-md-4 checkbox">
+                                                {{ form.options }}
+                                            </div>
+                                        {% else %}
+                                            <div class="col-md-8 summary">
+                                                <label for="{{ form.option.id_for_label }}" >{{ form.instance.question }}</label>
+                                                {% for error in form.option.errors %}
+                                                    <ul class="errorlist text-danger">
+                                                        <li>{{ error }}</li>
+                                                    </ul>
+                                                {% endfor %}
+                                            </div>
+                                            <div class="col-md-4">{{ form.option|addclass:'form-control' }}</div>
+                                        {% endif %}
+                                        {% for hidden in form.hidden_fields %}
+                                            {{ hidden }}
+                                        {% endfor %}
+                                    </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                        <button type="submit" class="button btn-primary pull-right">{% trans 'SEND' %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

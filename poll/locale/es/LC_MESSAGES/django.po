@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-21 16:51-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: actions.py:27
+msgid "Export CSV"
+msgstr "Exportar CSV"
+
+#: admin.py:72 models.py:92 models.py:198
+msgid "value"
+msgstr "valor"
+
+#: admin.py:92 admin.py:119 admin.py:160
+msgid "General"
+msgstr "Genearl"
+
+#: admin.py:93
+msgid "Poll dates"
+msgstr "Fechas de encuestas"
+
+#: admin.py:94 admin.py:120 admin.py:163
+msgid "Statistics and graphs"
+msgstr "Estaditicas y graficas"
+
+#: admin.py:161
+msgid "Answers"
+msgstr "Respuestas"
+
+#: apps.py:7
+msgid "IMCI Survey"
+msgstr "Encuesta AIEPI"
+
+#: chioces.py:6
+msgid "Selection"
+msgstr "Seleccion"
+
+#: chioces.py:7
+msgid "Multi Selection"
+msgstr "Multiple seleccion"
+
+#: chioces.py:11
+msgid "Female"
+msgstr "Femenino"
+
+#: chioces.py:12
+msgid "Male"
+msgstr "Masculino"
+
+#: chioces.py:16
+msgid "Primary"
+msgstr "Primaria"
+
+#: chioces.py:17
+msgid "Secondary"
+msgstr "Secundaria"
+
+#: chioces.py:18
+msgid "technical"
+msgstr "Tecnica"
+
+#: chioces.py:19
+msgid "Technologist"
+msgstr "Tecnologa"
+
+#: forms.py:33
+msgid "first name"
+msgstr "primer nombre"
+
+#: forms.py:34
+msgid "last name"
+msgstr "apellido"
+
+#: forms.py:35
+msgid "username"
+msgstr "nombre de usuario"
+
+#: forms.py:37
+msgid "Group"
+msgstr "Grupo"
+
+#: models.py:21
+msgid "name"
+msgstr "nombre"
+
+#: models.py:22
+msgid "short name"
+msgstr "nombre corto"
+
+#: models.py:23 models.py:60
+msgid "description"
+msgstr "descripcion"
+
+#: models.py:24 models.py:45 models.py:61 models.py:94 models.py:134
+#: models.py:201
+msgid "create date"
+msgstr "creado"
+
+#: models.py:25 models.py:46 models.py:62 models.py:95 models.py:135
+#: models.py:202 models.py:310 models.py:325
+msgid "last-modified"
+msgstr "modificado"
+
+#: models.py:32 models.py:40 models.py:191 models.py:270 models.py:307
+msgid "practice"
+msgstr "practica"
+
+#: models.py:33
+msgid "practices"
+msgstr "practicas"
+
+#: models.py:41
+msgid "original question text"
+msgstr "texto original de la pregunta"
+
+#: models.py:42
+msgid "question text"
+msgstr "texto de la pregunta"
+
+#: models.py:43 models.py:93 models.py:149
+msgid "order"
+msgstr "orden"
+
+#: models.py:44 models.py:197
+msgid "type"
+msgstr "tipo"
+
+#: models.py:50 models.py:90 models.py:193 models.py:322
+msgid "question"
+msgstr "pregunta"
+
+#: models.py:51 models.py:63
+msgid "questions"
+msgstr "preguntas"
+
+#: models.py:58
+msgid "title"
+msgstr "titulo"
+
+#: models.py:59
+msgid "group"
+msgstr "grupo"
+
+#: models.py:66 models.py:146 models.py:192 models.py:254 models.py:268
+msgid "poll"
+msgstr "encuesta"
+
+#: models.py:67
+msgid "polls"
+msgstr "encuenstas"
+
+#: models.py:91
+msgid "option text"
+msgstr "texto de la opcion"
+
+#: models.py:99 models.py:194
+msgid "option"
+msgstr "opcion"
+
+#: models.py:100 models.py:195
+msgid "options"
+msgstr "opciones"
+
+#: models.py:107
+msgid "identification number"
+msgstr "numero de identificacion"
+
+#: models.py:108
+msgid "user"
+msgstr "usuario"
+
+#: models.py:111 models.py:123 models.py:196 models.py:255 models.py:269
+msgid "respondent"
+msgstr "encuestado"
+
+#: models.py:112
+msgid "respondents"
+msgstr "encuestados"
+
+#: models.py:115
+msgid "Is respondent"
+msgstr "Es encuestado"
+
+#: models.py:124
+msgid "date birth"
+msgstr "fecha de nacimiemto"
+
+#: models.py:125
+msgid "gender"
+msgstr "genero"
+
+#: models.py:126
+msgid "health insurance"
+msgstr "seguro medico"
+
+#: models.py:127
+msgid "EPS"
+msgstr "EPS"
+
+#: models.py:128
+msgid "country"
+msgstr "pais"
+
+#: models.py:129
+msgid "neighborhood"
+msgstr "barrio"
+
+#: models.py:130
+msgid "city"
+msgstr "ciudad"
+
+#: models.py:131
+msgid "child vaccination card"
+msgstr "carnet de vacunacion del niño"
+
+#: models.py:132
+msgid "child name"
+msgstr "nombre del niño"
+
+#: models.py:133
+msgid "education level"
+msgstr "nivel de educacion"
+
+#: models.py:138 models.py:139
+msgid "demographics"
+msgstr "datos demograficos"
+
+#: models.py:147
+msgid "start date"
+msgstr "fecha inicial"
+
+#: models.py:148
+msgid "end date"
+msgstr "fecha final"
+
+#: models.py:153 models.py:263 models.py:308 models.py:323
+msgid "poll date"
+msgstr "fecha encuesta"
+
+#: models.py:154 models.py:264
+msgid "poll dates"
+msgstr "fechas encuenstas"
+
+#: models.py:199
+msgid "Text value"
+msgstr "Texto"
+
+#: models.py:200
+msgid "resolved"
+msgstr "resuelta"
+
+#: models.py:246 models.py:249
+msgid "answer"
+msgstr "respuesta"
+
+#: models.py:250
+msgid "answers"
+msgstr "respuestas"
+
+#: models.py:256
+msgid "date"
+msgstr "fecha"
+
+#: models.py:257
+msgid "completed"
+msgstr "completo"
+
+#: models.py:259
+msgid "poll score"
+msgstr "puntaje de la encuesta"
+
+#: models.py:271
+msgid "score"
+msgstr "puntaje"
+
+#: models.py:302
+msgid "practice score"
+msgstr "puntaje de la practica"
+
+#: models.py:303
+msgid "practice scores"
+msgstr "puntajes de las praticas"
+
+#: models.py:309 models.py:324
+msgid "average score"
+msgstr "puntaje promedio"
+
+#: templates/poll/admin/datatable.html:6
+msgid "ID"
+msgstr "ID"
+
+#: templates/poll/forms/demographics_form.html:8
+#: templates/poll/forms/demographics_form.html:15
+msgid "Demographics data"
+msgstr "Informacion demografica"
+
+#: templates/poll/forms/demographics_form.html:42
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: templates/poll/poll_list.html:5
+msgid "Poll list"
+msgstr "My lista de encuentas"
+
+#: views/charts.py:13
+msgid "Practice Chart"
+msgstr "Grafica de la practica"
+
+#: views/charts.py:50
+msgid "Question chart"
+msgstr "Grafica de preguntas"
+
+#: views/charts.py:80
+msgid "Poll Date Practice Score"
+msgstr "puntaje de la practica"
+
+#: views/charts.py:97
+msgid "Poll Date Question Score"
+msgstr "Puntaje de pregunta"
+
+#: views/charts.py:116
+msgid "Question"
+msgstr "Pregunta"
+
+#: views/views.py:50
+msgid "There are no polls available for you."
+msgstr "En este momento no hay encuestas disponibles para usted"
+
+#: views/views.py:52 views/views.py:58
+msgid "Excuse"
+msgstr "Lo sentimos"
+
+#: views/views.py:83
+msgid "Survey completed successfully, thank you very much for your time,"
+msgstr "Encuesta completada satisfactoriamente., muchas gracias por tu tiempo"
+
+#: views/views.py:84
+msgid "Completed"
+msgstr "Completado"
+
+#: views/views.py:132
+msgid "Your demographic information was saved successfully"
+msgstr "Su información demográfica fue salvada satisfactoriamente"

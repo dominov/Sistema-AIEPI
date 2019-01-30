@@ -1,0 +1,29 @@
+{% load i18n %}
+{% if messages %}
+    {% for message in messages %}
+        <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            {{ message|safe }}
+        </div>
+    {% endfor %}
+{#    <div class="modal fade" id="notification-modal" tabindex="-1" role="dialog"#}
+{#         aria-labelledby="notification-protocolLabel">#}
+{#        <div class="modal-dialog" role="document">#}
+{#            <div class="modal-content">#}
+{#                <div class="modal-header" id="notification-level">#}
+{#                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span#}
+{#                            aria-hidden="true">&times;</span></button>#}
+{#                    <h4 class="modal-title" id="notification-verb"></h4>#}
+{#                </div>#}
+{#                <div class="modal-body">#}
+{#                    <p id="notification-description"></p>#}
+{#                </div>#}
+{#                <div class="modal-footer">#}
+{#                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>#}
+{#                        {% trans 'Close' %}#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{% endif %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load staticfiles i18n modern_tags %}
+{% block breadcrumb %}
+    <li><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+    <li class="active">{% trans 'Graphics' %}</li>
+{% endblock %}
+{% block page_header %}
+    {% trans 'Graphics' %}
+{% endblock %}
+{% block main %}
+    <div id="column_chart" data-url="{% url 'poll:practice_score_column_chart' %}" data-username="{{ request.user.username }}"></div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>{% trans 'Practice' %}</th>
+                {% for c in categories_p %}
+                    <th>{{ c }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for r in result_p %}
+                <tr>
+                    <td>{{ r.name }}</td>
+                    {% for d in r.data %}
+                        <td>{{ d }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id="line_chart" data-url="{% url 'poll:question_line_chart' %}"  data-username="{{ request.user.username }}"></div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+            <!--<tr>-->
+            <th>{% trans 'Questions' %}</th>
+            {% for c in categories_q %}
+                <th>{{ c }}</th>
+            {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for r in result_q %}
+                <tr>
+                    <td>{{ r.name }}</td>
+                    {% for data in r.datas %}
+                        <td class="tooltip-td-{{ data.answer.type }}">
+                            <span class="tooltip-{{ data.answer.type }}">
+                                {{ data.data }} - {{ data.text }}
+                            </span>
+                            <div class="hidden tooltip-hide">
+                                {% if data.answer.type == 'options' %}
+                                    {% for option in data.answer.options.all %}
+                                        <li>{{ option }}</li>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+{% block extrajs %}
+    <script src="{% static 'js/highcharts/highcharts.js' %}"></script>
+    <script src="{% static 'js/highcharts/exporting.js' %}"></script>
+    <script src="{% static 'js/poll/tools.js' %}"></script>
+{% endblock %}

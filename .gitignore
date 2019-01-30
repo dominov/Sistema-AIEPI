@@ -1,0 +1,8 @@
+*.pyc
+.idea/
+django-bootstrap-form/
+django-fiber/
+django-highcharts/
+*local_settings.py*
+media/*
+*.mo

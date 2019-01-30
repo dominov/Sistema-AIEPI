@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load modern_tags  i18n %}
+
+{% block page_header %}
+    {% trans 'Poll list' %}
+{% endblock %}
+
+{% block main %}
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                        {% for poll in object_list %}
+                            <tr data-poll="{{ poll.id }}" data-url="{% url 'poll:questionnaire' poll.id %}" class="tr-poll">
+                                <td>
+                                    <div class="ckbox star">
+                                        <i class="glyphicon glyphicon-edit"></i>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <div class="media">
+                                        <div>
+                                            <span class="media-meta pull-right">{{ poll.get_available.end_date }}</span>
+                                            <h4 class="title">
+                                                {{ poll.get_available }}
+                                                <span class="pull-right pagado">(Pagado)</span>
+                                            </h4>
+                                            <p class="summary">{{ poll.description }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <h3 class="text-center">No polls yet.</h3>
+                            </tr>
+                        {% endfor %}
+                        </ul>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block extrajs %}
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $(document).ready(function () {
+            $(".tr-poll").click(function () {
+                window.location.href = $(this).data('url');
+            });
+        });
+    </script>
+{% endblock %}
